@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1728293437 source:/home/g3lat0/Desktop/code::blocks/calc/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
