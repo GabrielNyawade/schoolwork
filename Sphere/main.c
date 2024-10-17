@@ -4,8 +4,6 @@
 const float pi = 3.142;
 void get_surf_area(float r);
 void get_volume(float r);
-
-
 int main()
 {
 
@@ -18,7 +16,6 @@ int main()
 
     return 0;
 }
-
 
 void get_volume(float r)
 {
