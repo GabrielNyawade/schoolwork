@@ -23,6 +23,7 @@ int main()
     scanf("%d", &comp);
 
     float average = (math + phy + comp) / 3;
+    printf("\n");
     printf("Admission Number: %s\n", adm);
     printf("Surname: %s\n", name);
     printf("Your average is %.2f\n", average);

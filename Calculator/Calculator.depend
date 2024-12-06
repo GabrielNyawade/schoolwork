@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1730119101 source:/home/g3lat0/Desktop/schoolwork/Calculator/main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

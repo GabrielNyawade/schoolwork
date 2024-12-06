@@ -1,14 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 int main()
 {
+    srand(time(NULL));
     int rounds; // user inputs number of rounds
     printf("Number of rounds to play? "); // Prompts the user to specify the number of rounds to play
     scanf("%d", &rounds); // input part
 
     int score = 0;
-    int secret = 11; // secret number
+    int secret = (rand() % 100) + 1; // secret number
     int count = 0; // counter for the number of rounds
     while (count < rounds) // 0(1st round), 1(2nd round) 2(3rd round) etc...
     {
@@ -37,4 +39,8 @@ int main()
         printf("You have won.\n");
     else
         printf("Oops! You lose.\n");
+
+    printf("\n");
+    printf("Secret number = %d\n", secret);
+    return 0;
 }
