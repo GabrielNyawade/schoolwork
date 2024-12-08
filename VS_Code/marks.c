@@ -26,8 +26,6 @@ void display_array(int array[], int len)
     }
 }
 
-#include <limits.h>
-
 int max_value(int array[], int len)
 {
     int max_val = array[0];
