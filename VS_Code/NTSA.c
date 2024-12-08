@@ -23,7 +23,8 @@ int main()
     NTSAConstructor number_plate = {"KAA", "00", 1, 'A'};
     for (int i = 0; i < 1000; i++)
     {
-        // Number plates do not use the characters "I" and "O", therefore we need to omit the scenarios where the number plate has these characters.
+        // Number plates do not use the characters "I" and "O", 
+        // therefore we need to omit the scenarios where the number plate has these characters.
         if (number_plate.identifier[identifier_idx - 1] != 'I' 
         && number_plate.identifier[identifier_idx - 1] != 'O' 
         && number_plate.identifier[identifier_idx] != 'I' 
