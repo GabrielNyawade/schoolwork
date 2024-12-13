@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1734075300 source:/home/g3lat0/Desktop/schoolwork/Stone Paper Knife/main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

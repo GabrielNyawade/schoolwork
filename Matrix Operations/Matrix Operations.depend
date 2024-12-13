@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1733741064 source:/home/g3lat0/Desktop/schoolwork/Matrix Operations/main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+
