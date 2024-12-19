@@ -10,7 +10,7 @@ int main()
     printf("Enter number >>> ");
     scanf("%d", &number);
 
-    while (number > 0)
+    while (number != 0)
     {
         remainder = number % 10;
         number -= remainder;
