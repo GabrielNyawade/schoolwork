@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <math.h>
 
+#define sum(a, b) a+b
+
 double power(double base, int exponent) {
     double result = 1;
     for (int i = 0; i < exponent; i++) {
@@ -31,7 +33,7 @@ int main()
     switch(op)
     {
         case '+':
-            ans = num1 + num2;
+            ans = sum(num1 ,num2);
             break;
         case '-':
             ans = num1 - num2;
@@ -40,7 +42,7 @@ int main()
             ans = num1 * num2;
             break;
         case '/':
-            ans = num1 * num2;
+            ans = num1 / num2;
             break;
         case '%':
             ans = (int)num1 % (int)num2;
@@ -52,7 +54,7 @@ int main()
             break;
     }
     printf("\n");
-    printf("%f %c %f = %f", num1, op, num2, ans);
+    printf("%f %c %f = %lf", num1, op, num2, ans);
     return 0;
 }
 
