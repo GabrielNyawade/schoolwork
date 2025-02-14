@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-std::vector<int> swap_sort(std::vector<int>& nums)
+void swap_sort(std::vector<int>& nums)
 {
     int temp, i, j;
     for (i = 0; i < nums.size(); i++)
@@ -15,7 +15,7 @@ std::vector<int> swap_sort(std::vector<int>& nums)
             }
         }
     }
-    return nums;
+    return;
 }
 
 void display_vector(std::vector<int>& vec)
