@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1739943798 source:/home/g3lat0/Desktop/schoolwork/ObjectOrientedProgramming/Matrix Calculator/main.cpp
+	<iostream>
+	<vector>
+
