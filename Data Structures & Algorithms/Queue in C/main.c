@@ -26,7 +26,7 @@ void enqueue(int data)
 int dequeue()
 {
     int val = 0;
-    if (FRONT != -1 && FRONT < REAR)
+    if (FRONT != -1 && FRONT <= REAR)
     {
         val = Queue[FRONT];
         Queue[FRONT] = 0;
@@ -67,6 +67,10 @@ int main()
     enqueue(11);
     enqueue(16);
     display_queue();
+    dequeue();
+    dequeue();
+    dequeue();
+    dequeue();
     dequeue();
     dequeue();
     dequeue();
