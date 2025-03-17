@@ -30,7 +30,7 @@ void bubble_sort(std::vector<int>& nums)
 
 int main()
 {
-    std::vector<int> my_nums = { 12, 45, 34, 356, 24, 62, 23, 15, 9, 10, 4l };
+    std::vector<int> my_nums = { 12, 45, 34, 356, 24, 62, 23, 15, 9, 10, 4 };
     bubble_sort(my_nums);
     display_ivec(my_nums);
     return 0;
