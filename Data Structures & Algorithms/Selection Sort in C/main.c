@@ -1,14 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#define n 11
 int main()
 {
-    int i, j, arr[64], n, temp;
-    printf("Enter number of elements:\n");
-    scanf("%d", &n);
-    printf("Enter elements:\n");
-    for (i = 0; i < n; i++)
-        scanf("%d", &arr[i]);
+    int i, j, temp;
+    int arr[n] = {3, 5 ,9, 4, 7, 13, 2, 19, 15, 12, 1};
     for (i = 0; i < n; i++)
     {
         for (j = i + 1; j < n; j++)
