@@ -3,7 +3,7 @@
 void fibonacci(int n)
 {
     if (n == 0) return;
-    double prev = 1;
+    double prev = 0;
     std::cout << prev << ", ";
     double curr = 1;
     int i;
