@@ -13,6 +13,7 @@ void fibonacci(int n)
         curr = curr + prev;
         prev = curr - prev;
     }
+    std::cout << "\n";
 }
 
 int main()
