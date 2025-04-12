@@ -67,6 +67,13 @@ public:
             
         }
     }
+
+    // we need a function to cast a fraction to a floating point data type
+    operator float()
+    {
+        return float(numerator) / denominator;
+    }
+
     Fraction operator+(Fraction& other);
     Fraction operator+(int number); // overloaded functions for interaction with primitive data type int
     friend Fraction operator+(int number, Fraction& f);
@@ -84,12 +91,6 @@ public:
     friend Fraction operator/(int number, Fraction &f);
 
     Fraction operator~();   // reciprocal overloaded operator
-
-    // we need a function to cast a fraction to a floating point data type
-    operator float()
-    {
-        return float(numerator) / denominator;
-    }
 
     bool operator==(Fraction& other);
     
