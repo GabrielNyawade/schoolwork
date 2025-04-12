@@ -1,8 +1,8 @@
 #include <iostream>
 
-void fibonacci(int n)
+double fibonacci(int n)
 {
-    if (n == 0) return;
+    if (n == 0) return 0;
     double prev = 0;
     std::cout << prev << ", ";
     double curr = 1;
@@ -14,6 +14,7 @@ void fibonacci(int n)
         prev = curr - prev;
     }
     std::cout << "\n";
+    return curr;
 }
 
 int main()
