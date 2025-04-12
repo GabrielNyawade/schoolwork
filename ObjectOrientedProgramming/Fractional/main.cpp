@@ -241,10 +241,10 @@ std::ostream& operator<<(std::ostream& out, const Fraction& f)
 
 std::istream& operator>>(std::istream& in, Fraction& f)
 {
-    using std::cerr;
-    cerr << "Numerator: ";
+    using std::cout, std::cerr;
+    cout << "Numerator: ";
     in >> f.numerator;
-    cerr << "Denominator (!= 0): ";
+    cout << "Denominator (!= 0): ";
     in >> f.denominator;
     if (f.denominator == 0)
     {
