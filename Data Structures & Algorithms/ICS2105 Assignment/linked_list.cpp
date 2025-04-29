@@ -32,6 +32,21 @@ void insert_end(int data)
     }
 }
 
+void reverse_list()
+{
+    Node* curr = start;
+    Node* prev = start;
+    curr = curr->next;
+    prev->next = nullptr;
+    while (curr != nullptr)
+    {
+        prev = curr;
+        curr = curr->next;
+        prev->next = start;
+        start = prev;
+    }
+}
+
 void display_list()
 {
     Node* ptr = start;
@@ -40,38 +55,7 @@ void display_list()
         std::cout << ptr->number << "->";
         ptr = ptr->next;
     }
-    std::cout << "nullptr" << std::endl;
-}
-
-Node* search_address(int target)
-{
-    Node* ptr;
-    for (ptr = start; ptr != nullptr; ptr = ptr->next)
-        if (ptr->number == target) return ptr;
-    return nullptr;
-}
-
-int value_at(int pos)
-{
-    Node* ptr = start;
-    for (int i = 0; i < pos; i++)
-        ptr = ptr->next;
-    return ptr->number;
-}
-
-void reverse_list()
-{
-    Node* ptr = start;
-    Node* prev = start;
-    ptr = ptr->next;
-    prev->next = nullptr;
-    while (ptr != nullptr)
-    {
-        prev = ptr;
-        ptr = ptr->next;
-        prev->next = start;
-        start = prev;
-    }
+    std::cout << "NULL" << std::endl;
 }
 
 
@@ -84,7 +68,6 @@ int main()
     display_list();
     insert_end(10);
     display_list();
-    std::cout << "Value at index" << 3 << " = " << value_at(3) << std::endl;
     reverse_list();
     display_list();
 

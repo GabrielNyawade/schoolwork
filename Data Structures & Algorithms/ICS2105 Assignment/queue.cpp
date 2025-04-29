@@ -14,11 +14,22 @@ public:
     }
     void enqueue(int);
     int dequeue(void);
-    void shift(void);
     void reverse(void);
     void display(void);
 };
 
+void Queue::reverse()
+{
+    int temp;
+    while (FRONT - REAR < 0)
+    {
+        temp = line[REAR];
+        line[REAR] = line[FRONT];
+        line[FRONT] = temp;
+        FRONT++;
+        REAR--;
+    }
+}
 void Queue::enqueue(int data)
 {
     if (REAR == MAX - 1) return;
@@ -46,32 +57,6 @@ int Queue::dequeue()
     return val;
 }
 
-void Queue::shift()
-{
-    if (FRONT < 1) return;
-    int offset = FRONT;
-    while (FRONT <= REAR)
-    {
-        line[FRONT - offset] = line[FRONT];
-        line[FRONT] = 0;
-        FRONT++;
-    }
-    FRONT = 0;
-    REAR = REAR - offset;
-}
-
-void Queue::reverse()
-{
-    int temp;
-    while (FRONT - REAR < 0)
-    {
-        temp = line[REAR];
-        line[REAR] = line[FRONT];
-        line[FRONT] = temp;
-        FRONT++;
-        REAR--;
-    }
-}
 
 void Queue::display()
 {
@@ -93,7 +78,6 @@ int main()
     q1.dequeue();
     q1.dequeue();
     q1.display();
-    q1.shift();
     q1.display();
     q1.reverse();
     q1.display();
