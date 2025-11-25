@@ -17,6 +17,7 @@ void insert_start(int data)
     {
        start = new_node;
        new_node->next = nullptr;
+       new_node->prev = nullptr;
     }
     else
     {
