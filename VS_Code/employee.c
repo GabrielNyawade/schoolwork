@@ -37,7 +37,7 @@ int main(int argc, char const *argv[])
         float da = employee[j].basic_pay * 0.51;
         int cca = 1000;
         float gross_sal = employee[j].basic_pay + da + cca;
-        printf("%d\t%s\t\t\t%-6d\t\t%.2f\t%d\t%.2f\n", employee[j].number, employee[j].name, employee[j].basic_pay, da, cca, gross_sal);
+        printf("%d\t%s\t\t%-6d\t\t%.2f\t%d\t%.2f\n", employee[j].number, employee[j].name, employee[j].basic_pay, da, cca, gross_sal);
     }
     return 0;
 }

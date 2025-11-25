@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/g3lat0/Desktop/schoolwork/VS_Code",
-      "program": "/home/g3lat0/Desktop/schoolwork/VS_Code/build/Debug/outDebug",
+      "cwd": "/home/g3lat0/Desktop/schoolwork/Data Structures & Algorithms/Doubly Linked List",
+      "program": "/home/g3lat0/Desktop/schoolwork/Data Structures & Algorithms/Doubly Linked List/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
