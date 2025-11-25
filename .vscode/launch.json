@@ -7,9 +7,9 @@
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
-      "externalConsole": false,
-      "cwd": "/home/g3lat0/Desktop/schoolwork/Data Structures & Algorithms/Doubly Linked List",
-      "program": "/home/g3lat0/Desktop/schoolwork/Data Structures & Algorithms/Doubly Linked List/build/Debug/outDebug",
+      "externalConsole": true,
+      "cwd": "c:/Users/user/Documents/schoolwork/ObjectOrientedProgramming/Time",
+      "program": "c:/Users/user/Documents/schoolwork/ObjectOrientedProgramming/Time/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
