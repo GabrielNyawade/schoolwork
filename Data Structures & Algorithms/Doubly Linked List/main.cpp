@@ -13,22 +13,20 @@ Node* start = nullptr;
 void insert_start(int data)
 {
     Node* new_node = new Node;
+    new_node->value = data;
+    new_node->prev = nullptr;
+    new_node->next = nullptr;
     if (start == nullptr)
     {
        start = new_node;
-       new_node->next = nullptr;
-       new_node->prev = nullptr;
     }
     else
     {
+        Node* ptr = start;
         new_node->next = start;
-        Node* avail = start;
-        avail->prev = new_node;
-
+        ptr->prev = new_node;
+        start = new_node;
     }
-    new_node->value = data;
-    new_node->prev = nullptr;
-    start = new_node;
 }
 
 void display_list()

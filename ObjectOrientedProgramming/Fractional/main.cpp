@@ -264,6 +264,6 @@ std::istream& operator>>(std::istream& in, Fraction& f)
 int main()
 {
     std::cout << 1 << " + " << Fraction(2, 3) << " = " << Fraction(1 + Fraction(2, 3)) << "\n";
-    std::cout << Fraction(3.1) << "\n";
+    std::cout << Fraction(0.2594) << "\n";
     return 0;
 }
