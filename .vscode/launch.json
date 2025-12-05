@@ -1,15 +1,17 @@
 {
   "version": "0.2.0",
   "configurations": [
+    
+    
     {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
-      "externalConsole": true,
-      "cwd": "c:/Users/user/Documents/schoolwork/ObjectOrientedProgramming/Time",
-      "program": "c:/Users/user/Documents/schoolwork/ObjectOrientedProgramming/Time/build/Debug/outDebug",
+      "externalConsole": false,
+      "cwd": "/home/g3lat0/Desktop/schoolwork/Introduction to Computer Science",
+      "program": "/home/g3lat0/Desktop/schoolwork/Introduction to Computer Science/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
