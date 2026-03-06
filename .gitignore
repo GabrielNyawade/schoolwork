@@ -2,4 +2,6 @@
 /.vscode
 .vscode/c_cpp_properties.json
 .vscode/c_cpp_properties.json
-Introduction to Computer Science/bubble_sort
+Introduction to Computer Science/*
+!Introduction to Computer Science/*.*
+!Introduction to Computer Science/*/
