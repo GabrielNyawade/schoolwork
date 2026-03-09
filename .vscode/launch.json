@@ -11,7 +11,7 @@
             "cwd": "/home/g3lat0/Desktop/schoolwork/Introduction to Computer Science",
             "program": "/home/g3lat0/Desktop/schoolwork/Introduction to Computer Science/build/Debug/outDebug",
             "MIMode": "gdb",
-            "miDebuggerPath": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",
