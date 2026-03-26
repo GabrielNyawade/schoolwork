@@ -8,7 +8,7 @@ struct Node
 };
 
 Node* start = nullptr;
-// Node* end = nullptr;
+Node* end = nullptr;
 
 void insert_start(int data)
 {
@@ -19,6 +19,7 @@ void insert_start(int data)
     if (start == nullptr)
     {
        start = new_node;
+       end = new_node;
     }
     else
     {
@@ -35,16 +36,17 @@ void insert_end(int data)
     new_node->value = data;
     new_node->prev = nullptr;
     new_node->next = nullptr;
-    if (start == nullptr) start = new_node;
+    if (start == nullptr)
+    {
+        start = new_node;
+        end = new_node;
+    }
     else
     {
-        Node* ptr = start;
-        while (ptr->next != nullptr)
-        {
-            ptr = ptr->next;
-        }
+        Node* ptr = end;
         ptr->next = new_node;
         new_node->prev = ptr;
+        end = new_node;
     }
 }
 
