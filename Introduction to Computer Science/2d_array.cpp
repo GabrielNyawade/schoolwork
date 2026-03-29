@@ -19,6 +19,7 @@ int main()
     for (int i = 0; i < rows_mat; i++)
         cout << "Sum of row " << i+1 << ": " << rowSum(mat, i) << '\n';
     cout << "Maximum value: " << findMax(mat, rows_mat) << '\n';
+    
     return 0;
 }
 
