@@ -25,6 +25,7 @@ int main()
         insert(nums, val);
     }
     print(nums);
+    delete[] nums.p_arr;
     return 0;
 }
 void insert(DynArray& arr, int val)
