@@ -1,0 +1,3 @@
+Alice avg = 84.3333 PASS
+Bob avg = 73.3333 PASS
+Charlie avg = 54.6667 FAIL
